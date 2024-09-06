@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "scripts": {
+    "dev": "nodemon src/main.js"
+  },
+  "type": "module"
+}

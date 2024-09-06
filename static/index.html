@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Primaco Technical Test</title>
+
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>Primaco Technical Test</h1>
+
+    <button id="load-facts-btn">Refresh facts</button>
+
+    <button id="add-new-fact-btn">Add fact</button>
+
+    <table id="facts-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+
+          <th>Text</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <p>No facts loaded yet</p>
+
+            <p>Click the "Refresh facts" button to load facts</p>
+          </td>
+        </tr>
+      </tbody>
+
+      <tfoot></tfoot>
+    </table>
+
+    <dialog id="add-new-fact-dialog">
+      <form id="add-new-fact-form">
+        <label for="form-text">Text</label>
+
+        <textarea
+          id="form-text"
+          name="text"
+          placeholder="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, rem quidem. Libero, vitae itaque! Corrupti, modi."
+          required
+          rows="8"
+        ></textarea>
+
+        <button type="submit">Create fact</button>
+
+        <button id="close-add-new-fact-dialog-btn" type="button">Cancel</button>
+      </form>
+    </dialog>
+
+    <script defer src="./script.js"></script>
+  </body>
+</html>

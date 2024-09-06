@@ -1,0 +1,52 @@
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+
+:root {
+  font-family: Arial, sans-serif;
+}
+
+dialog {
+  border: none;
+  border-radius: 0.5rem;
+
+  &#add-new-fact-dialog {
+  }
+}
+
+form {
+  &#add-new-fact-form {
+    width: 32rem;
+  }
+}
+
+label {
+  &:has(+ [required]) {
+    &:after {
+      content: '*';
+      color: red;
+    }
+  }
+}
+
+table {
+  & td {
+    padding: 0.5rem;
+  }
+
+  & th {
+    text-align: left;
+  }
+
+  &#facts-table {
+    background-color: #f9f9f9;
+
+    table-layout: auto;
+
+    width: 100%;
+  }
+}
+
+textarea {
+  display: block;
+  resize: vertical;
+  width: 100%;
+}
