@@ -1,12 +1,20 @@
 {
+  "author": {
+    "email": "jeannemas@jeannemas.me",
+    "name": "Jeanne Mas",
+    "url": "https://jeannemas.me/"
+  },
   "dependencies": {
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
   },
+  "name": "primaco-technical-test",
+  "private": true,
   "scripts": {
-    "dev": "nodemon src/main.js"
+    "dev": "nodemon src/main.js",
+    "serve": "node src/main.js"
   },
   "type": "module"
 }
